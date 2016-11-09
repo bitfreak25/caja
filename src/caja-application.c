@@ -451,7 +451,7 @@ caja_application_open (GApplication *app,
 {
     CajaApplication *self = CAJA_APPLICATION (app);
     gboolean browser_window = FALSE;
-    const gchar *geometry;
+    const gchar *geometry = NULL;
     const char splitter = '=';
 
     g_debug ("Open called on the GApplication instance; %d files", n_files);
